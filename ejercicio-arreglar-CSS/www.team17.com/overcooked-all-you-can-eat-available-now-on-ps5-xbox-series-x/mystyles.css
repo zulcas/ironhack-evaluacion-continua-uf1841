@@ -1,0 +1,24 @@
+/** Solamente se puede modificar este fichero! Usa con astucia los selectores para aplicar las propiedades CSS adecuadas dependiendo del caso  */
+
+/** Ejemplo: Si quisiera pintar el h1 de rojo pondría */
+
+/* h1 {
+    color: red;
+} */
+
+.published-date{
+    color: #F77D00;
+}
+
+div.bg-black{
+    background-color: rgb(132, 0, 197);
+    opacity: 0.8;
+}
+
+.wysiwyg>h4{
+    text-align: center;
+}
+
+.logos-social-networks{
+    justify-content: center;
+}

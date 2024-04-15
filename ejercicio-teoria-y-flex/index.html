@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <style>
+
+        span {
+            font-weight: 700;
+        }
+
+        .dice {
+            display: flex;
+            border: 1px solid black;
+            width: 300px;
+            padding: 50px;
+            /* flex-direction: column;
+            padding: 20px 50px; */
+            justify-content: space-between;
+            
+          
+        }
+
+        /* .dice>div:first-child{
+            align-self: flex-start;
+        }
+        .dice>div:last-child{
+            align-self: flex-end;
+        } */
+
+        /* COMENTARIO: Había creado primero un dado tipico (con elementos situados en diagonal) y leugo he visto la imagen del documento y lo he cambiado para ser idéntico. Lo dejo comentado que me ha parecido interesante */
+           
+
+        .dice>div {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: black;
+        }
+        strong{
+            background-color: yellow;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Preguntas</h1>
+        <p>Contesta las preguntas en el mismo HTML</p>
+    </div>
+    <div class="container">
+        <h2>Dada esta regla CSS</h2>
+        <img src="cssrule.png" alt="">
+        <ol>
+            <li>¿Qué tipo de selector CSS es? <span>Respuesta: Es un selector de...<strong>clase</strong> </span></li>
+            <li>¿Cuantas propiedades CSS establece este selector? Respuesta: <strong>dos</strong></li>
+            <li>¿Cuál es el valor de la segunda propiedad? <span>Respuesta: <strong>18px</strong></span></li>
+        </ol>
+        <h2>Analiza el siguiente tag img</h2>
+        <img src="tagimg.png" alt="">
+        <ol>
+            <li>¿Cuantos atributos tiene este tag? <span>Respuesta: <strong>3</strong></span></li>
+            <li>¿Cuál es el valor del atributo <i>src</i>? <span>Respuesta: <strong>/w3images/team2.jpg</strong></span></li>
+            <li>Imagina que tenemos la siguiente reglas CSS. ¿Crees que el tamaño de la imagen sería de 1000px? ¿Por
+                qué? <img src="big-image.png" alt=""> </li>
+            <p><span>Respuesta:</span> <strong> No. Porque hay un estilo en linea de la misma propiedad (width) que tiene más especificidad que la regla de este apartado. En este caso el width será 100% (style="width:100%)<strong></p>
+        </ol>
+        <h2>¿Cuál es el valor de la propiedad <i>font-weight</i> de este botón?</h2>
+        <button type="button" onclick="alert('Hello world!')">Click Me!</button>
+        <p><span>Respuesta: <strong>400</strong></span></p>
+    </div>
+    <div class="container">
+        <h2>Crea un dado que muestre la cara del "dos" usando flex adecuadamente.</h2>
+        <p> Pista: solo necesitas aplicar
+            propiedaes CSS de forma
+            adecuada al selector .dice para conseguirlo</p>
+        <div class="dice">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
